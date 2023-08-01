@@ -12,8 +12,10 @@ models:
         tests:
           - not_null
       ### PK ###
-      - name: model_name
+      - name: model_type
         tests:
-          - not_null     
+          - not_null  
+          - accepted_values:  
+             values: ['T-shirt', 'Short', 'Legging', 'Crop-top', 'Top', 'Accessories']
 
           
