@@ -1,10 +1,19 @@
 version: 2
 
 models:
-  - name: cc_sales_products
-    columns:
-      ### PK ###
+  - name: cc_stock
+    columns: 
+        ### PK ###
       - name: product_id
         tests:
           - unique
+      ### PK ###
+      - name: product_name
+        tests:
           - not_null
+      ### PK ###
+      - name: model_name
+        tests:
+          - not_null     
+
+          
